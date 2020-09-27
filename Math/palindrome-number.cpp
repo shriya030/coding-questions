@@ -1,6 +1,7 @@
 https://leetcode.com/problems/palindrome-number/
 
-
+// if (rev > INT_MAX/10 || rev < INT_MIN/10) return false;
+// This can also be used as an overflow condition.
 
 class Solution {
 public:
