@@ -1,5 +1,13 @@
 https://leetcode.com/problems/add-two-numbers/
 
+/*
+To explain, lets assume that \text{rev}rev is positive.
+1. If temp = rev * 10 + pop causes overflow, then it must be that rev ≥ INT_MAX/10.
+2. If rev> INT_MAX/10, then temp = rev * 10 + pop is guaranteed to overflow.
+3. If rev == INT_MAX/10, then temp = rev * 10 + pop will overflow if and only if pop>7.
+Similar logic can be applied when \text{rev}rev is negative.
+*/
+
 
 /**
  * Definition for singly-linked list.
